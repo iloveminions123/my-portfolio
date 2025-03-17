@@ -1,47 +1,44 @@
-
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html>
+  <head>
+    <title>Anime Survey Form</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Front-End Developer Portfolio </title>
-<link rel="stylesheet" href="styles.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil:opsz,wght@10..72,100..900&family=Outfit:wght@100..900&family=Rock+Salt&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1 id="title">Favorite Anime?</h1>
+    <p id="description">Please fill this out so that we can learn more about your favorite anime</p>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label" for="name">Please enter name: <input id="name" type="text" required placeholder="name"></label>
+        <label id="email-label" for="email"> Please enter email:</label>
+         <input id="email" type="email" required placeholder="email"></label>
+        <label id="number-label" for="number"> Please enter number of anime you've seen: <input id="number" 
+        type="number" min="0" max="200" required placeholder="number"></label>
+      </fieldset>
+      <fieldset>
+             <label for="anime-title"> what's the better anime?</label>
+               <input type="radio" name="anime-title" id="anime-title" value="Naruto"> Naruto
+             <input type="radio"
+name="anime-title" id="anime-title" value="Bleach"> Bleach
 
-</head>
-<body>
-    <nav id="navbar">
-        <a class="nav-link" href="#welcome-section">Home</a>
-        <a class="nav-link" href="#projects">Projects</a>
-        <a class="nav-link" id="profile-link" href="https://github.com/iloveminions123" target="_blank">GitHub</a>
-    </nav>
-
-    <section id="welcome-section">
-        <h1>Welcome to My Portfolio</h1>
-        <p>Hello there! My name is Donia and I'm an aspiring front-end developer. Check out some of my work below!</p>
-    </section>
-
-    <section id="projects">
-        <p>Here are a few of my projects!</p>
-        <div class="project-tile">
-            <a href="https://www.freecodecamp.org/learn/2022/responsive-web-design/build-a-survey-form-project/build-a-survey-form" target="_blank">Survey Form</a>
-       </div>
-       <div class="project-tile">
-            <a href="https://www.freecodecamp.org/learn/2022/responsive-web-design/build-a-tribute-page-project/build-a-tribute-page" target="_blank">Tribute Page</a>
-       </div>
-       <div class="project-tile">
-            <a href="https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures-v8/build-a-palindrome-checker-project/build-a-palindrome-checker" target="_blank">Palindrome Checker</a>
-       </div>
-       <div class="project-tile">
-            <a href="https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures-v8/build-a-roman-numeral-converter-project/build-a-roman-numeral-converter" target="_blank">Roman Numeral Converter</a>
-       </div>
-       <div class="project-tile">
-            <a href="https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures-v8/build-a-telephone-number-validator-project/build-a-telephone-number-validator" target="_blank">Phone Number Validator</a>
-       </div>
-       
-</section>
-
-</body>
+    <label>What's the best way to watch?<label>
+     <select id="dropdown" name="watch">
+       <option value="Netflix">Netflix</option>
+       <option value="YT">YT</option>
+      </select>
+    <label>Why do you like anime?
+    </label>
+    <input type="checkbox" id="fun-reason" value="fun">
+    <label for="fun-reason">it's fun</label>
+       <input type="checkbox" id="stress-relief-reason" value="stress-relief">
+    <label for="stress-relief-reason">it's stress-relief</label>
+       <input type="checkbox" id="background-noise-reason" value="background-noise">
+    <label for="background-noise-reason">background-noise</label>
+    <label>Additional comments:
+    </label>
+    <textarea> </textarea>.
+    </fieldset>
+   <input id="submit" type="submit" value="submit">
+  </body>
 </html>
