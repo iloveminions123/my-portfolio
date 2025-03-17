@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Anime Survey Form</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1 id="title">Favorite Anime?</h1>
+    <p id="description">Please fill this out so that we can learn more about your favorite anime</p>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label" for="name">Please enter name: <input id="name" type="text" required placeholder="name"></label>
+        <label id="email-label" for="email"> Please enter email:</label>
+         <input id="email" type="email" required placeholder="email"></label>
+        <label id="number-label" for="number"> Please enter number of anime you've seen: <input id="number" 
+        type="number" min="0" max="200" required placeholder="number"></label>
+      </fieldset>
+      <fieldset>
+             <label for="anime-title"> what's the better anime?</label>
+               <input type="radio" name="anime-title" id="anime-title" value="Naruto"> Naruto
+             <input type="radio"
+name="anime-title" id="anime-title" value="Bleach"> Bleach
+
+    <label>What's the best way to watch?<label>
+     <select id="dropdown" name="watch">
+       <option value="Netflix">Netflix</option>
+       <option value="YT">YT</option>
+      </select>
+    <label>Why do you like anime?
+    </label>
+    <input type="checkbox" id="fun-reason" value="fun">
+    <label for="fun-reason">it's fun</label>
+       <input type="checkbox" id="stress-relief-reason" value="stress-relief">
+    <label for="stress-relief-reason">it's stress-relief</label>
+       <input type="checkbox" id="background-noise-reason" value="background-noise">
+    <label for="background-noise-reason">background-noise</label>
+    <label>Additional comments:
+    </label>
+    <textarea> </textarea>.
+    </fieldset>
+   <input id="submit" type="submit" value="submit">
+  </body>
+</html>
