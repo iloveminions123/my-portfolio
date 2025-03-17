@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    }
+    
+    
+    
+    body {
+      color:white;
+      font-family: "Rock Salt";
+      background-color: rgb(200,30,100);
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    display:flex;}
+    
+    #welcome-section {
+      font-family: "Big Shoulders Stencil";
+      font-size: 30px;
+      margin:100px;
+    }
+    
+       @media (max-width: 600px) {
+    nav {
+    padding: 5px 0;
+    } 
+    #projects {
+    padding: 20px;
+      }
+      }
+    
+      nav {      position: fixed;
+    top: 0;
+    width: 100%;
+    background: grey;
+    padding: 10px 0;
+    text-align: center;}
+    
+    nav a{
+      color:black
+    }
+    
