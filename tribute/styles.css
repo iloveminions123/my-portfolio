@@ -1,0 +1,15 @@
+div #image {
+    display:block;
+    max-width:100%;
+    height:auto;
+  margin:0 auto
+  }
+
+  body{
+    font-family: times-new-roman;
+    font-size: 20px ;
+    color:black;
+    text-align:center;
+    color:black;
+    background-color:rgb(200,200,200);
+  }
