@@ -1,0 +1,30 @@
+body {
+    font-family:  Arial, sans-serif;
+    font-size: 14px;
+    background-color: teal ;
+    color: white;
+  }
+  #check-btn
+   {
+    min-height: 15px;
+    min-width:30px;
+    background-color:grey
+  }
+  
+  .palindrome{
+  min-height:10px;
+  min-width:10px;
+  border-radius:10px;
+  color:black;
+  background-color:white;
+  text-align:center;
+  align-items:center;
+  justify-content:center;
+  
+  
+  }
+  
+  .result{
+  min-height:5px;
+  min-width:5px;
+  }
